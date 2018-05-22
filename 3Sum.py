@@ -30,7 +30,7 @@ class Solution(object):
                 if nums[i] + nums[start] + nums[end] > 0:
                     end -= 1
                 elif nums[i] + nums[start] + nums[end] < 0:
-                    start -= 1
+                    start += 1
                 else:
                     insert = [nums[i], nums[start], nums[end]]
                     if insert not in array:
